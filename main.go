@@ -121,39 +121,3 @@ func directoryListCheck(dirPath string, dirList []string) ([]bool, []error) {
 	}
 	return dirBoolForDir, errList
 }
-
-/////////////////////////////////////////////////
-// Some debugging stuff
-/* 	dirList, err := wut_files(dirPath)
-   	if err != nil {
-   		fmt.Println(err)
-   	}
-
-   	dirBool, err := directoryCheck(dirPath)
-   	if err != nil {
-   		fmt.Println(err)
-   	}
-
-   	// check if the the given path is directory or a file
-   	// IsDir --> fileInfo.Mode().IsDir()
-   	// Dir = 1, Not Dir = 0
-   	if dirBool == true { //essentially, if 1
-   		fmt.Println(dirList)
-
-   		//show me what the contents are
-   		for i := 0; i < len(dirList); i++ {
-   			fmt.Println(dirList[i])
-   		}
-   		fmt.Println(dirList)
-   	} else {
-   		// it's a file, skip it
-   	}
-
-   	dirBoolForDir, errList := directoryListCheck(dirPath, dirList)
-
-   	fmt.Println(dirList)
-   	fmt.Println(dirBoolForDir)
-   	fmt.Println(errList)
-
-   	fmt.Println()
-   	fmt.Println() */
